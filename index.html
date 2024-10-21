@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDD Playerment</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <h1>TDD Playerment</h1>
+    <label for="searchName">Buscar Práctica:</label><br>
+    <input type="text" id="searchName" name="searchName" required><br>
+    <button id="searchButton">Buscar</button><br>
+    <div id="proyectoContainer"></div>
+    <button id="showRankingButton" ahref="./ranking.html">Mostrar Ranking</button>
+
+    
+
+
+
+    <div id="mainContainer">
+    <table>
+      <thead id="tabla-encabezado">
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Fecha de Creación</th>
+          <th>Enlace</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-practicas"></tbody>
+    </table>
+    
+    <br><br>
+
+    <form id="proyectoForm">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br>
+      <br>
+      <label for="descripcion">Descripción:</label><br>
+      <textarea id="descripcion" name="descripcion" required></textarea><br>
+      <br>
+      <label for="fecha">Fecha:</label><br>
+      <input type="date" id="fecha" name="fecha" required><br>
+      <br>
+      <label for="enlace">Enlace:</label><br>
+      <input type="text" id="enlace" name="enlace" required><br>
+      <br>
+      <input type="submit" id="boton"/>
+    </form>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="contenedorFormulario"></div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/presenter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDD Playerment</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <h1>TDD Playerment</h1>
+    <div id="proyectoContainer"></div>
+
+  <!-- Contenedor del ranking -->
+  <div id="rankingContainer"></div>
+
+
+    <div id="mainContainer">
+    <table>
+      <thead id="tabla-encabezado">
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Fecha de Creación</th>
+          <th>Enlace</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-practicas"></tbody>
+    </table>
+    
+    <br><br>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="contenedorFormulario"></div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/presenter.js"></script>
+  </body>
+</html>
